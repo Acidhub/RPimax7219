@@ -68,27 +68,20 @@ The breakout board has two headers to allow daisy-chaining:
 
 **NOTE:** See below for cascading/daisy-chaining, power supply and level-shifting.
 
-### Building & Installing the Python library
+### Installing the Python library
 
-Clone the code from github:
-
-    $ git clone https://github.com/Acidhub/RPimax7219.git
-
-Next, follow the specific steps below for your OS.
+Use pip to install
 
 #### For Raspian:
 
-    $ cd RPimax7219
     $ sudo apt-get install python3-dev python3-pip
-    $ sudo pip install spidev
-    $ sudo python setup.py install
+    $ sudo pip3 install spidev RPimax7219
 
 #### For Arch Linux:
 
     # cd RPimax7219
     # pacman -Sy base-devel python
-    # pip install spidev
-    # python2 setup.py install
+    # pip install spidev RPimax7219
 
 > ### Cascading, power supply & level shifting
 > 
